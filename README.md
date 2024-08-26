@@ -10,7 +10,7 @@ Source code for our training and evaluating models  can be found under /src
 
 Code for our proposed SA Merge can be found under /merge
 
-/egs contains utterance ids for trainitest splits for the MyST and CMU Kids databases
+/egs contains utterance ids for train/test splits for the MyST and CMU Kids databases
 
 ## Getting Started
 
