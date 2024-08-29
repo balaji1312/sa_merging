@@ -1,50 +1,50 @@
 merge_configs:
   - include:
-      - r".*\.encoder\.layers\.[0-3]\.self_attn\.q_proj.*"
-      - r".*\.encoder\.layers\.[0-3]\.self_attn\.v_proj.*"
-      - r".*\.encoder\.layers\.[0-3]\.self_attn\.k_proj.*"
-      - r".*\.decoder\.layers\.[0-3]\.self_attn\.q_proj.*"
-      - r".*\.decoder\.layers\.[0-3]\.self_attn\.v_proj.*"
-      - r".*\.decoder\.layers\.[0-3]\.self_attn\.k_proj.*"
-      - r".*\.decoder\.layers\.[0-3]\.encoder_attn\.q_proj.*"
-      - r".*\.decoder\.layers\.[0-3]\.encoder_attn\.v_proj.*"
-      - r".*\.decoder\.layers\.[0-3]\.encoder_attn\.k_proj.*"
+      - .*\.encoder\.layers\.[0-3]\.self_attn\.q_proj.*
+      - .*\.encoder\.layers\.[0-3]\.self_attn\.v_proj.*
+      - .*\.encoder\.layers\.[0-3]\.self_attn\.k_proj.*
+      - .*\.decoder\.layers\.[0-3]\.self_attn\.q_proj.*
+      - .*\.decoder\.layers\.[0-3]\.self_attn\.v_proj.*
+      - .*\.decoder\.layers\.[0-3]\.self_attn\.k_proj.*
+      - .*\.decoder\.layers\.[0-3]\.encoder_attn\.q_proj.*
+      - .*\.decoder\.layers\.[0-3]\.encoder_attn\.v_proj.*
+      - .*\.decoder\.layers\.[0-3]\.encoder_attn\.k_proj.*
     lamda: 0
     alpha: 0
   - include:
-      - r".*\.encoder\.layers\.[4-7]\.self_attn\.q_proj.*"
-      - r".*\.encoder\.layers\.[4-7]\.self_attn\.v_proj.*"
-      - r".*\.encoder\.layers\.[4-7]\.self_attn\.k_proj.*"
-      - r".*\.decoder\.layers\.[4-7]\.self_attn\.q_proj.*"
-      - r".*\.decoder\.layers\.[4-7]\.self_attn\.v_proj.*"
-      - r".*\.decoder\.layers\.[4-7]\.self_attn\.k_proj.*"
-      - r".*\.decoder\.layers\.[4-7]\.encoder_attn\.q_proj.*"
-      - r".*\.decoder\.layers\.[4-7]\.encoder_attn\.v_proj.*"
-      - r".*\.decoder\.layers\.[4-7]\.encoder_attn\.k_proj.*"
-      - r".*\.conv1.*"
-      - r".*\.conv2.*"
-      - r".*\.embed_positions*"
-      - r".*\.embed_tokens.*"
+      - .*\.encoder\.layers\.[4-7]\.self_attn\.q_proj.*
+      - .*\.encoder\.layers\.[4-7]\.self_attn\.v_proj.*
+      - .*\.encoder\.layers\.[4-7]\.self_attn\.k_proj.*
+      - .*\.decoder\.layers\.[4-7]\.self_attn\.q_proj.*
+      - .*\.decoder\.layers\.[4-7]\.self_attn\.v_proj.*
+      - .*\.decoder\.layers\.[4-7]\.self_attn\.k_proj.*
+      - .*\.decoder\.layers\.[4-7]\.encoder_attn\.q_proj.*
+      - .*\.decoder\.layers\.[4-7]\.encoder_attn\.v_proj.*
+      - .*\.decoder\.layers\.[4-7]\.encoder_attn\.k_proj.*
+      - .*\.conv1.*
+      - .*\.conv2.*
+      - .*\.embed_positions*
+      - .*\.embed_tokens.*
     lamda: 0
     alpha: 0
   - include:
-      - r".*\.encoder\.layers\.[8-9]\.self_attn\.q_proj.*"
-      - r".*\.encoder\.layers\.[8-9]\.self_attn\.v_proj.*"
-      - r".*\.encoder\.layers\.[8-9]\.self_attn\.k_proj.*"
-      - r".*\.encoder\.layers\.(10|11)\.self_attn\.q_proj.*"
-      - r".*\.encoder\.layers\.(10|11)\.self_attn\.v_proj.*"
-      - r".*\.encoder\.layers\.(10|11)\.self_attn\.k_proj.*"
-      - r".*\.decoder\.layers\.[8-9]\.self_attn\.q_proj.*"
-      - r".*\.decoder\.layers\.[8-9]\.self_attn\.v_proj.*"
-      - r".*\.decoder\.layers\.[8-9]\.self_attn\.k_proj.*"
-      - r".*\.decoder\.layers\.(10|11)\.self_attn\.q_proj.*"
-      - r".*\.decoder\.layers\.(10|11)\.self_attn\.v_proj.*"
-      - r".*\.decoder\.layers\.(10|11)\.self_attn\.k_proj.*"
-      - r".*\.decoder\.layers\.[8-9]\.encoder_attn\.q_proj.*"
-      - r".*\.decoder\.layers\.[8-9]\.encoder_attn\.v_proj.*"
-      - r".*\.decoder\.layers\.[8-9]\.encoder_attn\.k_proj.*"
-      - r".*\.decoder\.layers\.(10|11)\.encoder_attn\.q_proj.*"
-      - r".*\.decoder\.layers\.(10|11)\.encoder_attn\.v_proj.*"
-      - r".*\.decoder\.layers\.(10|11)\.encoder_attn\.k_proj.*"
+      - .*\.encoder\.layers\.[8-9]\.self_attn\.q_proj.*
+      - .*\.encoder\.layers\.[8-9]\.self_attn\.v_proj.*
+      - .*\.encoder\.layers\.[8-9]\.self_attn\.k_proj.*
+      - .*\.encoder\.layers\.(10|11)\.self_attn\.q_proj.*
+      - .*\.encoder\.layers\.(10|11)\.self_attn\.v_proj.*
+      - .*\.encoder\.layers\.(10|11)\.self_attn\.k_proj.*
+      - .*\.decoder\.layers\.[8-9]\.self_attn\.q_proj.*
+      - .*\.decoder\.layers\.[8-9]\.self_attn\.v_proj.*
+      - .*\.decoder\.layers\.[8-9]\.self_attn\.k_proj.*
+      - .*\.decoder\.layers\.(10|11)\.self_attn\.q_proj.*
+      - .*\.decoder\.layers\.(10|11)\.self_attn\.v_proj.*
+      - .*\.decoder\.layers\.(10|11)\.self_attn\.k_proj.*
+      - .*\.decoder\.layers\.[8-9]\.encoder_attn\.q_proj.*
+      - .*\.decoder\.layers\.[8-9]\.encoder_attn\.v_proj.*
+      - .*\.decoder\.layers\.[8-9]\.encoder_attn\.k_proj.*
+      - .*\.decoder\.layers\.(10|11)\.encoder_attn\.q_proj.*
+      - .*\.decoder\.layers\.(10|11)\.encoder_attn\.v_proj.*
+      - .*\.decoder\.layers\.(10|11)\.encoder_attn\.k_proj.*
     lamda: 0
     alpha: 0
