@@ -91,8 +91,8 @@ def selective_attention_merging(merged_model, models_to_merge, exclude_param_nam
             merged_task_vector = SA_scaling_coefficient * models_to_merge_task_vectors[0] + (1 - SA_scaling_coefficient) * models_to_merge_task_vectors[1]
         else:
             assert scaling_coefficient == 1.0, "Scaling coefficient must be 1.0 when lamda = 0!"
-            print(f'Only keeping parameters of model 1 with lamda: {lamda}')
-            merged_task_vector = models_to_merge_task_vectors[1]
+            print(f'Only keeping parameters of model 0 with lamda: {lamda}')
+            merged_task_vector = models_to_merge_task_vectors[0]
 
         merged_params = merged_task_vector.combine_with_pretrained_model(pretrained_model=merged_model, scaling_coefficient=scaling_coefficient)
 
